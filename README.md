@@ -15,7 +15,7 @@ This fork is adapted for [AlphaFS](https://github.com/alphaleonis/AlphaFS/) whic
 
 # Example of running script
 
-    .\search\_files.ps1 -SearchPath "\\\\server01\D$" -Recurse -Filter "\*.encrypted"
+    .\search_files.ps1 -SearchPath "\\server01\D$" -Recurse -Filter "*.encrypted"
 
 ## Parameters
 

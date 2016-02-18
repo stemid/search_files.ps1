@@ -27,4 +27,4 @@ This fork is adapted for [AlphaFS](https://github.com/alphaleonis/AlphaFS/) whic
 
 # Disclaimer
 
-[Get-AlphaFSChildItem.ps1](https://gallery.technet.microsoft.com/Get-AlphaFSChildItems-ff95f60f) is a product of some kind soul at TechNet. That function made it much easier for me to use AlphaFS since they had already figured out their API.
+[Get-AlphaFSChildItem.ps1](https://gallery.technet.microsoft.com/Get-AlphaFSChildItems-ff95f60f) is a product of some kind soul at TechNet. That function made it much easier for me to use AlphaFS since they had already figured out their API. As I write this it is licensed under the [MIT license](https://opensource.org/licenses/MIT).

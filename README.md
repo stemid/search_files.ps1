@@ -24,3 +24,7 @@ This fork is adapted for [AlphaFS](https://github.com/alphaleonis/AlphaFS/) whic
   * -Recurse BOOL - Do a recursive search, defaults to false.
   * -Filter STRING - Search filter, defaults to wildcard.
   * -MoveTo PATH - Move any file found to this dir, defaults to false.
+
+# Disclaimer
+
+[Get-AlphaFSChildItem.ps1](https://gallery.technet.microsoft.com/Get-AlphaFSChildItems-ff95f60f) is a product of some kind soul at TechNet. That function made it much easier for me to use AlphaFS since they had already figured out their API.

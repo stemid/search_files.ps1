@@ -41,7 +41,7 @@ The DLL might become **blocked** for some reason, resulting in this error when y
 According to gurus on IRC you need to unblock the DLL, close Powershell and try again. 
 
   * `Unblock-File "C:\scripts\AlphaFS.2.0.1\lib\net451\AlphaFS.dll"`
-	* `Exit`
+  * `Exit`
   * Open new Powershell session
   * `Import-Module "C:\scripts\AlphaFS.2.0.1\lib\net451\AlphaFS.dll"`
 

@@ -25,6 +25,26 @@ This fork is adapted for [AlphaFS](https://github.com/alphaleonis/AlphaFS/) whic
   * -Filter STRING - Search filter, defaults to wildcard.
   * -MoveTo PATH - Move any file found to this dir, defaults to false.
 
+# Known issue
+
+The DLL might become **blocked** for some reason, resulting in this error when you try to import-module. 
+
+    PS C:\scripts> import-module -name "C:\scripts\AlphaFS.2.0.1\lib\net451\AlphaFS.dll"
+    import-module : Could not load file or assembly 'file:///C:\scripts\AlphaFS.2.0.1\lib\net451\AlphaFS.dll' or one of its
+     dependencies. Operation is not supported. (Exception from HRESULT: 0x80131515)
+    At line:1 char:1
+    + import-module -name "C:\scripts\AlphaFS.2.0.1\lib\net451\AlphaFS.dll"
+    + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        + CategoryInfo          : NotSpecified: (:) [Import-Module], FileLoadException
+        + FullyQualifiedErrorId : System.IO.FileLoadException,Microsoft.PowerShell.Commands.ImportModuleCommand
+
+According to gurus on IRC you need to unblock the DLL, close Powershell and try again. 
+
+  * `Unblock-File "C:\scripts\AlphaFS.2.0.1\lib\net451\AlphaFS.dll"`
+	* `Exit`
+  * Open new Powershell session
+  * `Import-Module "C:\scripts\AlphaFS.2.0.1\lib\net451\AlphaFS.dll"`
+
 # Disclaimer
 
 [Get-AlphaFSChildItem.ps1](https://gallery.technet.microsoft.com/Get-AlphaFSChildItems-ff95f60f) is a product of some kind soul at TechNet. That function made it much easier for me to use AlphaFS since they had already figured out their API. As I write this it is licensed under the [MIT license](https://opensource.org/licenses/MIT).
